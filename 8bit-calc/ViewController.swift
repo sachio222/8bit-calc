@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        initializeAll()
         
         let path = NSBundle.mainBundle().pathForResource("btn", ofType: "wav")
         let soundURL = NSURL(fileURLWithPath: path!)
@@ -124,16 +124,16 @@ class ViewController: UIViewController {
 
     @IBAction func onClearPressed(sender: AnyObject){
         playSound()
-        
-        // reset all
+        initializeAll()
+    }
+    
+    func initializeAll(){
         runningNumber = ""
         leftValStr = ""
         rightValStr = ""
         currentOperation = Operation.Empty
         result = ""
-        
         outputLbl.text = "0"
-        
     }
 
 }
