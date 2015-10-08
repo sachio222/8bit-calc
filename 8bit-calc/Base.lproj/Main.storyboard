@@ -3,6 +3,11 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Minecraft.ttf">
+            <string>Minecraft</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -194,27 +199,41 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeO-d1-oIm">
-                                <rect key="frame" x="465" y="70" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888888888" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="214" translatesAutoresizingMaskIntoConstraints="NO" id="NeO-d1-oIm">
+                                <rect key="frame" x="193" y="84" width="214" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="BlG-EZ-FgK"/>
+                                    <constraint firstAttribute="width" constant="214" id="PFi-wC-mgP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="37"/>
+                                <color key="textColor" red="0.11393862028467408" green="0.13492321687154055" blue="0.15240293560606055" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="NeO-d1-oIm" firstAttribute="centerY" secondItem="4Vh-wS-IUh" secondAttribute="centerY" id="AoF-MD-O5U"/>
+                            <constraint firstItem="NeO-d1-oIm" firstAttribute="leading" secondItem="4Vh-wS-IUh" secondAttribute="trailing" constant="-229" id="ILc-g9-5E0"/>
                             <constraint firstItem="pY0-vO-QwQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MoB-hM-1ao"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dsl-VC-QhE" secondAttribute="bottom" id="Oap-da-Iib"/>
                             <constraint firstItem="dsl-VC-QhE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rx3-oO-Wep"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pY0-vO-QwQ" secondAttribute="bottom" id="UIQ-Ne-FB0"/>
                             <constraint firstAttribute="trailing" secondItem="pY0-vO-QwQ" secondAttribute="trailing" id="XV6-xy-X4M"/>
                             <constraint firstItem="3ly-TZ-R9b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bs4-PO-UFB"/>
+                            <constraint firstItem="NeO-d1-oIm" firstAttribute="top" secondItem="4Vh-wS-IUh" secondAttribute="top" constant="8" id="hXN-yh-vVY"/>
                             <constraint firstItem="pY0-vO-QwQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="i0v-EG-OfD"/>
+                            <constraint firstItem="4Vh-wS-IUh" firstAttribute="trailing" secondItem="NeO-d1-oIm" secondAttribute="trailing" constant="16" id="ky0-U4-OHW"/>
                             <constraint firstItem="3ly-TZ-R9b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oSB-xB-nd0"/>
                             <constraint firstItem="Zkz-xF-l4M" firstAttribute="top" secondItem="e62-xN-Hmm" secondAttribute="bottom" constant="-356" id="ra8-ym-Zzz"/>
                             <constraint firstAttribute="trailing" secondItem="dsl-VC-QhE" secondAttribute="trailing" id="rqf-x0-Fjx"/>
                             <constraint firstItem="e62-xN-Hmm" firstAttribute="leading" secondItem="Zkz-xF-l4M" secondAttribute="trailing" constant="-221" id="xFc-Le-Bu2"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AoF-MD-O5U"/>
+                                <exclude reference="ILc-g9-5E0"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
