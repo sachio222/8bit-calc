@@ -280,6 +280,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="outputLbl" destination="NeO-d1-oIm" id="fdc-Kz-9wn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
