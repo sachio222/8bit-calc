@@ -15,11 +15,49 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space-bg" translatesAutoresizingMaskIntoConstraints="NO" id="pY0-vO-QwQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3ly-TZ-R9b">
+                                <rect key="frame" x="177" y="76" width="246" height="449"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="4Vh-wS-IUh">
+                                        <rect key="frame" x="0.0" y="0.0" width="246" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="0QM-Ic-7wB"/>
+                                            <constraint firstAttribute="width" constant="246" id="iA2-ga-Vcb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="Zkz-xF-l4M">
+                                        <rect key="frame" x="0.0" y="74" width="246" height="375"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="375" id="e3O-TZ-iwG"/>
+                                            <constraint firstAttribute="width" constant="246" id="m9Z-fx-0r1"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pY0-vO-QwQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MoB-hM-1ao"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pY0-vO-QwQ" secondAttribute="bottom" id="UIQ-Ne-FB0"/>
+                            <constraint firstAttribute="trailing" secondItem="pY0-vO-QwQ" secondAttribute="trailing" id="XV6-xy-X4M"/>
+                            <constraint firstItem="3ly-TZ-R9b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bs4-PO-UFB"/>
+                            <constraint firstItem="pY0-vO-QwQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="i0v-EG-OfD"/>
+                            <constraint firstItem="3ly-TZ-R9b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oSB-xB-nd0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="378" y="339"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backpanel" width="620" height="938"/>
+        <image name="counter" width="516" height="133"/>
+        <image name="space-bg" width="988" height="946"/>
+    </resources>
 </document>
